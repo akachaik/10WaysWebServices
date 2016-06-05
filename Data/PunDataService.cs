@@ -26,5 +26,20 @@ namespace Data
         {
             return _puns.SingleOrDefault(p => p.PunId == punId);
         }
+
+        public void AddPun(Pun pun)
+        {
+            
+        }
+
+        public void UpdatePun(Pun pun)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete(int punId)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

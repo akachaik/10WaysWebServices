@@ -18,19 +18,40 @@ namespace WebServices.ASMX
     // [System.Web.Script.Services.ScriptService]
     public class PunService : System.Web.Services.WebService
     {
+        private readonly PunDataService _service;
+        public PunService()
+        {
+            _service = new PunDataService();
+        }
 
         [WebMethod]
         public Pun[] GetPuns()
         {
-            var service =new PunDataService();
-            return service.GetPuns();
+            return _service.GetPuns();
         }
 
         [WebMethod]
         public Pun GetPunById(int punId)
         {
-            var service = new PunDataService();
-            return service.GetPunById(punId);
+            return _service.GetPunById(punId);
+        }
+
+        [WebMethod]
+        public void CreatePun(Pun pun)
+        {
+            _service.AddPun(pun);
+        }
+
+        [WebMethod]
+        public void EditPun(Pun pun)
+        {
+            _service.UpdatePun(pun);
+        }
+
+        [WebMethod]
+        public void DeletePun(int punId)
+        {
+            _service.Delete(punId);
         }
     }
 }
