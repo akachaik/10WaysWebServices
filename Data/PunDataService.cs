@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Data
 {
@@ -19,6 +20,11 @@ namespace Data
         public Pun[] GetPuns()
         {
             return _puns.ToArray();
+        }
+
+        public Pun GetPunById(int punId)
+        {
+            return _puns.SingleOrDefault(p => p.PunId == punId);
         }
     }
 }

@@ -25,5 +25,12 @@ namespace WebServices.ASMX
             var service =new PunDataService();
             return service.GetPuns();
         }
+
+        [WebMethod]
+        public Pun GetPunById(int punId)
+        {
+            var service = new PunDataService();
+            return service.GetPunById(punId);
+        }
     }
 }
