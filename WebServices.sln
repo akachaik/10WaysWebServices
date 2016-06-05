@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices.ASMX", "WebServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{4FE7CD40-C785-41FE-B43F-DA67CE970939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PunClient", "PunClient\PunClient.csproj", "{9E25C412-7E8F-48B4-8C06-8005C20D2876}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9282FBA5-A468-4F8A-8F0F-849EA35C6EB3} = {9282FBA5-A468-4F8A-8F0F-849EA35C6EB3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{4FE7CD40-C785-41FE-B43F-DA67CE970939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE7CD40-C785-41FE-B43F-DA67CE970939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FE7CD40-C785-41FE-B43F-DA67CE970939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E25C412-7E8F-48B4-8C06-8005C20D2876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E25C412-7E8F-48B4-8C06-8005C20D2876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E25C412-7E8F-48B4-8C06-8005C20D2876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E25C412-7E8F-48B4-8C06-8005C20D2876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
